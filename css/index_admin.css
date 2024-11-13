@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+/* Estilo del cuerpo de la pagina */
+body{
+    background-color: #E1E1E1;
+}
+
+/* Estilo del nav */
+header{/* Contenedor principal */
+    display: flex;
+    min-height: 70px;
+    background-color: #19A71D;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+a{/* Estilo de los textos del nav */
+    text-decoration: none;
+    color: white;
+    
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+.nombre{
+font-size: 30px;
+}
+
+/* Estilo del boton cerrar sesion */ 
+.comic-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff5252;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .comic-button:hover {
+    background-color: #fff;
+    color: #ff5252;
+    border: 2px solid #ff5252;
+    box-shadow: 5px 5px 0px #ff5252;
+  }
+  
+  .comic-button:active {
+    background-color: #fcf414;
+    box-shadow: none;
+    transform: translateY(4px);
+  }
+
+  /* Estilo del mensaje de bienvenida */
+  .mensaje{
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 50px;
+  }
+  
+  .mensaje h2{
+    font-size: 30px;
+  }
+  
+/* Estilo del diseño responsivo */
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+/* Contenedor principal de las cards con responsivo */
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Asegura que las cards se distribuyan con espacio entre ellas */
+    gap: 20px; /* Añade espacio entre las cards */
+}
+
+/* Estilos de las cards */ 
+.card {
+    position: relative;
+    flex-grow: 1;
+    flex-basis: 200;
+    width: 11.875em;
+    height: 16.5em;
+    box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 120ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 0.5em;
+    padding-bottom: 3.4em;
+    
+  }
+  
+  .card::after {
+    content: "Acceder";
+    padding-top: 1.25em;
+    padding-left: 1.25em;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    background: #00AC7C;
+    color: #fff;
+    height: 2.5em;
+    width: 90%;
+    transition: all 80ms;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .card .title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    left: 0.625em;
+    bottom: 1.875em;
+    font-weight: 400;
+    color: #000;
+  }
+  
+  .card .price {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    left: 0.625em;
+    bottom: 0.625em;
+    color: #000;
+  }
+  
+  .card:hover::after {
+    bottom: 0;
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .card:active {
+    transform: scale(0.98);
+  }
+  
+  
+  
+  .text {
+    max-width: 55px;
+  }
+  /* Estilos del contenido de la card */ 
+  .image {
+    background: rgb(241, 241, 241);
+    background-image: url(../img/usuario.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 200px 200px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+/* Los fondos de cada card */ 
+  .image2{
+    background-image: url(../img/documentos.png);
+  }
+
+  .image3{
+    background-image: url(../img/citas.png);
+  }
+
+  .image4{
+    background-image: url(../img/datos.png);
+  }
+
+  .image5{
+    background-image: url(../img/topicos.png);
+  }
+
+  .image6{
+    background-image: url(../img/encuestas.png);
+  }
+
+  .image7{
+    background-image: url(../img/reportes.png);
+  }
+
+  .image8{
+    background-image: url(../img/respaldo.png);
+  }

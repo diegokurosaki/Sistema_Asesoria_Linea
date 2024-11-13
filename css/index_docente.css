@@ -1,0 +1,616 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+/*Estilo del cuerpo de la pagina*/
+body{
+    background-color: #E1E1E1;
+}
+
+/*Estilo principal del nav admin*/
+.header{/*Contenedor principal*/
+    background-color: #19A71D;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+/*Estilo de cursor al pasar por encima del titulo sistema*/
+.header .logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header .logo h2{/*Estilo del titulo sistema*/
+    height: 30px;
+    font-size: 25px;
+    color: white;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo h2:hover{/*Animacion del titulo sistema*/
+    transform: scale(1.2);
+    color: #ffbc0e;
+}
+
+/*Estilo de los elementos del nav*/
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{/*Estilo de la palabra admin*/
+    display: inline-block;
+    padding: 0 20px;
+     
+}
+
+.header .nav-links a{/*Estilo de la palabra admin*/
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;    
+}
+
+.admin{/*Estilo del icono admin*/
+    position: absolute;
+    left: 940px;
+    top:0px;
+    width: 84px;
+}
+
+/*Contenedor principal del boton cerrar sesion*/
+.header .btn button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+/*Animacion del boton cerrar sesion*/
+.header .btn button:hover{
+    background-color: #e2f1f8;
+    color: #ffbc0e;
+    transform: scale(1.1);
+}
+
+/*Estilo del mensaje bienvenida*/
+.mensaje{
+position: absolute;
+left:530px;
+top:140px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+/*Estilo de las cards*/
+
+.container{/*Contenedor principal*/
+ width: 260px;
+ height: 354px;
+ position: relative;
+ left: 50px;
+ top:200px;
+ cursor: pointer;
+ transition: all 0.4s;
+ display: flex;
+ margin-bottom: 100px;
+}
+
+.container2{/*Contenedor principal*/
+    width: 260px;
+    height: 354px;
+    position: relative;
+    left: 50px;
+    top:200px;
+    cursor: pointer;
+    transition: all 0.4s;
+    display: flex;
+    margin-bottom: 250px;
+   }
+
+.card{
+    width: 260px;
+    height: 354px;
+    background-color: #ffffff14;
+    backdrop-filter:blur(10px);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+    transition: all 0.4s;
+}
+
+/*Estilo de los circulos*/
+.circle2{
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(#b0e633,#53ef7d);
+    border-radius: 50%;
+    position: absolute;
+    bottom:-25px;
+    right: -25px;
+    animation: move 2s ease-in-out alternate infinite;
+}
+
+.circle1{
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(#b0e633,#53ef7d);
+    border-radius: 50%;
+    position: absolute;
+    top:-25px;
+    left: -25px;
+    animation: move 2s ease-in-out alternate infinite;
+}
+
+/*Estilo del moviemiento*/
+@keyframes move{
+    to{
+        transform: translateY(-20px);
+    }
+}
+
+/*Animacion del movimiento*/
+.card:hover{
+    transform: scale(1.04) rotate(1deg);
+}
+
+h3{/*Estilo del titulo de card*/
+    text-align: center;
+    font-size: 28px;
+    
+}
+
+.icon_menu{/*Estilo del icon de card*/
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top:75px;
+    left: 75px;
+}
+
+/*ICONS DEL SEGUNDO CONTENEDOR*/
+.icon_menu5{/*Estilo del icon de card*/
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top:70px;
+    left: 48px;
+}
+
+.btn_card1{/*Estilo del boton de la card*/
+    display: block;
+    width: 120px;
+    height: 43px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 180px 74px;
+    padding: 10px 24px;
+    text-decoration: none;
+    color: white;
+    background-color:#19A71D;
+    
+}
+
+a{/*Estilo de la letra del boton de la card*/
+    font-size: 19px;
+}
+
+.btn_card2{/*Estilo del boton de la card*/
+    display: block;
+    width: 120px;
+    height: 43px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 180px 74px;
+    padding: 10px 43px;
+    text-decoration: none;
+    color: white;
+    background-color:#19A71D;
+    position: relative;
+    top:-170px;
+}
+
+/*ESTILO DE LA SEGUNDA CARD*/
+.card2{
+    width: 260px;
+    height: 354px;
+    background-color: #ffffff14;
+    backdrop-filter:blur(10px);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+    transition: all 0.4s;
+    margin-left: 120px;
+}
+
+/*Estilo de los circulos*/
+.circle4{
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(#b0e633,#53ef7d);
+    border-radius: 50%;
+    position: absolute;
+    bottom:-25px;
+    right: -405px;
+    animation: move 2s ease-in-out alternate infinite;
+}
+
+.circle3{
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(#b0e633,#53ef7d);
+    border-radius: 50%;
+    position: absolute;
+    top:-25px;
+    left: 355px;
+    animation: move 2s ease-in-out alternate infinite;
+}
+
+/*Estilo del moviemiento*/
+@keyframes move{
+    to{
+        transform: translateY(-20px);
+    }
+}
+
+/*Animacion del movimiento*/
+.card2:hover{
+    transform: scale(1.04) rotate(1deg);
+}
+
+h3{/*Estilo del titulo de card*/
+    text-align: center;
+    font-size: 28px;
+}
+
+.icon_menu2{/*Estilo del icon de card*/
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top:70px;
+    left: 55px;
+}
+
+.btn_card3{/*Estilo del boton de la card*/
+    display: block;
+    width: 120px;
+    height: 43px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 180px 74px;
+    padding: 10px 24px;
+    text-decoration: none;
+    color: white;
+    background-color:#19A71D;
+}
+
+a{/*Estilo de la letra del boton de la card*/
+    font-size: 19px;
+}
+
+.btn_card4{/*Estilo del boton de la card*/
+    display: block;
+    width: 120px;
+    height: 43px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 180px 74px;
+    padding: 10px 43px;
+    text-decoration: none;
+    color: white;
+    background-color:#19A71D;
+    position: relative;
+    top:-170px;
+}
+
+/*ESTILO DE LA TERCERA CARD*/
+.card3{
+    width: 260px;
+    height: 354px;
+    background-color: #ffffff14;
+    backdrop-filter:blur(10px);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+    transition: all 0.4s;
+    margin-left: 120px;
+}
+
+/*Estilo de los circulos*/
+.circle6{
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(#b0e633,#53ef7d);
+    border-radius: 50%;
+    position: absolute;
+    bottom:-25px;
+    right: -795px;
+    animation: move 2s ease-in-out alternate infinite;
+}
+
+.circle5{
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(#b0e633,#53ef7d);
+    border-radius: 50%;
+    position: absolute;
+    top:-25px;
+    left: 735px;
+    animation: move 2s ease-in-out alternate infinite;
+}
+
+/*Estilo del moviemiento*/
+@keyframes move{
+    to{
+        transform: translateY(-20px);
+    }
+}
+
+/*Animacion del movimiento*/
+.card3:hover{
+    transform: scale(1.04) rotate(1deg);
+}
+
+h3{/*Estilo del titulo de card*/
+    text-align: center;
+    font-size: 28px;
+}
+
+.icon_menu3{/*Estilo del icon de card*/
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top:45px;
+    left: 68px;
+}
+
+/*ICONS DEL SEGUNDO CONTENEDOR PRINCIPAL*/
+.icon_menu6{/*Estilo del icon de card*/
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top:75px;
+    left: 68px;
+}
+
+.btn_card5{/*Estilo del boton de la card*/
+    display: block;
+    width: 120px;
+    height: 43px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 180px 74px;
+    padding: 10px 24px;
+    text-decoration: none;
+    color: white;
+    background-color:#19A71D;
+}
+
+a{/*Estilo de la letra del boton de la card*/
+    font-size: 19px;
+}
+
+.btn_card6{/*Estilo del boton de la card*/
+    display: block;
+    width: 120px;
+    height: 43px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 180px 74px;
+    padding: 10px 43px;
+    text-decoration: none;
+    color: white;
+    background-color:#19A71D;
+    position: relative;
+    top:-170px;
+}
+
+/*ESTILO DE LA CUARTA CARD*/
+.card4{
+    width: 260px;
+    height: 354px;
+    background-color: #ffffff14;
+    backdrop-filter:blur(10px);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+    transition: all 0.4s;
+    margin-left: 120px;
+}
+
+/*Estilo de los circulos*/
+.circle8{
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(#b0e633,#53ef7d);
+    border-radius: 50%;
+    position: absolute;
+    bottom:-25px;
+    right: -1165px;
+    animation: move 2s ease-in-out alternate infinite;
+}
+
+.circle7{
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(#b0e633,#53ef7d);
+    border-radius: 50%;
+    position: absolute;
+    top:-25px;
+    left: 1115px;
+    animation: move 2s ease-in-out alternate infinite;
+}
+
+/*Estilo del moviemiento*/
+@keyframes move{
+    to{
+        transform: translateY(-20px);
+    }
+}
+
+/*Animacion del movimiento*/
+.card4:hover{
+    transform: scale(1.04) rotate(1deg);
+}
+
+h3{/*Estilo del titulo de card*/
+    text-align: center;
+    font-size: 28px;
+}
+
+.icon_menu4{/*Estilo del icon de card*/
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top:75px;
+    left: 52px;
+}
+
+/*ICONS DEL SEGUNDO CONTENEDOR PRINCIPAL*/
+.icon_menu8{/*Estilo del icon de card*/
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top:70px;
+    left: 50px;
+}
+
+.icon_menu9{/*Estilo del icon de card*/
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top:70px;
+    left: 50px;
+}
+
+.btn_card7{/*Estilo del boton de la card*/
+    display: block;
+    width: 120px;
+    height: 43px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 180px 74px;
+    padding: 10px 24px;
+    text-decoration: none;
+    color: white;
+    background-color:#19A71D;
+}
+
+a{/*Estilo de la letra del boton de la card*/
+    font-size: 19px;
+}
+
+.btn_card8{/*Estilo del boton de la card*/
+    display: block;
+    width: 120px;
+    height: 43px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 180px 74px;
+    padding: 10px 43px;
+    text-decoration: none;
+    color: white;
+    background-color:#19A71D;
+    position: relative;
+    top:-170px;
+}
+
+/*Estilo del modals en cerrar sesion*/
+/*:::Boton-Modal:::*/
+.boton-modal{
+    padding: 40px;
+}
+.boton-modal label{
+    padding: 10px 15px;
+    background: #eceff1;
+    color: #1b3039;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.boton-modal label:hover{
+    color: #ffbc0e;
+}
+/*:::Fin Boton-Modal:::*/
+
+/*:::Ventana Modal:::*/
+#btn-modal{
+    display: none;
+}
+.container-modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+#btn-modal:checked ~ .container-modal{
+    display: flex;
+}
+.content-modal{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.content-modal h2{
+    margin-bottom: 15px;
+}
+.content-modal p{
+    padding: 15px 0px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+.content-modal .btn-cerrar{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-modal .btn-cerrar label a{
+    padding: 7px 10px;
+    background-color: #19A71D;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    text-decoration: none;
+}
+.content-modal .btn-cerrar label:hover{
+    background-color:#185E83;
+}
+.cerrar-modal{
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+}
+@media screen and (max-width:800px) {
+    .content-modal{
+        width: 90%;
+    }
+}
+/*:::Fin Ventana Modal:::*/

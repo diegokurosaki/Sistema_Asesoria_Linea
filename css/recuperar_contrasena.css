@@ -1,0 +1,113 @@
+*{/*Todos los elementos de la pagina*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url('../img/recuperacion9.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 20vh; /* Ajusta la altura al 100% del viewport */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+}
+
+.titulo_1{/*Titulo de sistema*/
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    top:70px;
+}
+
+/*Estilo del formulario*/
+.formulario{/*El contenedor principal*/
+  width: 400px;
+  height: 320px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 200px;
+  border-radius: 15px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.formulario h4 {/*El titulo del formulario*/
+    font-size: 27px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+.campo{/*El estilo de los campos*/
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+.formulario p {/*El estilo de las letras olvido contraseña*/
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  .formulario a {/*El estilo de clic aqui*/
+    color: white;
+    text-decoration: none;
+  }
+
+  /*El estilo de clic aqui*/
+  .boton {/*Contenedor principal del boton*/
+    margin-left: 70px;
+	width: 200px;
+	height: 50px;
+	background: black;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.boton span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+/*El estilo de la barra azul que estara encima del boton*/
+  .boton.dos::after {/*Es el pseudo elemento, agrega un elemento por encima*/
+	content: "";/*cadena vacia*/
+	width: 100%;/*La capa que abarcara el ancho del boton*/
+	position: absolute;/*Para que este fuera la capa del boton*/
+	z-index: 1;/*Para que quede debajo del texto*/
+	top: 0;
+	left: calc(-100% - 80px);/*El -100 es para que entre desde la izquierda a derecha*/
+	border-bottom: 80px solid #286cff;
+	border-right: 80px solid transparent;/*Es la diagonal del color azul*/
+	transition: .4s ease-in-out all;/*Es la diagonal del color azul*/
+}
+
+/*Estilo de animacion de los botones*/
+.boton.dos:hover::after {
+	left: 0;
+}

@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+/*Estilo del cuerpo de la pagina*/
+body{
+    background-color: #E1E1E1;
+}
+
+/*Estilo principal del nav admin*/
+.header{/*Contenedor principal*/
+    background-color: #19A71D;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+/*Estilo de cursor al pasar por encima del titulo sistema*/
+.header .logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header .logo h2{/*Estilo del titulo sistema*/
+    height: 30px;
+    font-size: 25px;
+    color: white;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo h2:hover{/*Animacion del titulo sistema*/
+    transform: scale(1.2);
+    color: #ffbc0e;
+}
+
+/*Estilo de los elementos del nav*/
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{/*Estilo de la palabra admin*/
+    display: inline-block;
+    padding: 0 20px;
+     
+}
+
+.header .nav-links a{/*Estilo de la palabra admin*/
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;    
+}
+
+.admin{/*Estilo del icono admin*/
+    position: absolute;
+    left: 940px;
+    top:0px;
+    width: 84px;
+}
+
+/*Contenedor principal del boton cerrar sesion*/
+.header .btn button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+/*Animacion del boton cerrar sesion*/
+.header .btn button:hover{
+    background-color: #e2f1f8;
+    color: #ffbc0e;
+    transform: scale(1.1);
+}
+
+/*ESTILO DE NAV PARA BASE*/
+.menu_base{/*cONTENEDOR PRINCIPAL*/
+    width: 524px;
+    height: 50px;
+    background: #222;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:30px;
+    left:550px;
+}
+
+.menu_base a{
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    padding: 0 23px;
+    z-index: 1;
+}
+
+.menu_base .color{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 120px;
+    height: 100%;
+    background: linear-gradient(45deg,#29431e,#19A71D);
+    border-radius: 8px;
+    transition: .5s;
+}
+
+.menu_base a:nth-child(1):hover~span
+{
+    left: 0;
+}
+
+.menu_base a:nth-child(2):hover~span
+{
+    left: 120px;
+}
+
+.menu_base a:nth-child(3):hover~span
+{
+    left: 239px;
+}
+
+.menu_base a:nth-child(4):hover~span
+{
+    left: 365px;
+}
+
+/*Estilo del modals en cerrar sesion*/
+/*:::Boton-Modal:::*/
+.boton-modal{
+    padding: 40px;
+}
+.boton-modal label{
+    padding: 10px 15px;
+    background: #eceff1;
+    color: #1b3039;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.boton-modal label:hover{
+    color: #ffbc0e;
+}
+/*:::Fin Boton-Modal:::*/
+
+/*:::Ventana Modal:::*/
+#btn-modal{
+    display: none;
+}
+.container-modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+#btn-modal:checked ~ .container-modal{
+    display: flex;
+}
+.content-modal{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.content-modal h2{
+    margin-bottom: 15px;
+}
+.content-modal p{
+    padding: 15px 0px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+.content-modal .btn-cerrar{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-modal .btn-cerrar label a{
+    padding: 7px 10px;
+    background-color: #19A71D;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    text-decoration: none;
+}
+.content-modal .btn-cerrar label:hover{
+    background-color:#185E83;
+}
+.cerrar-modal{
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+}
+@media screen and (max-width:800px) {
+    .content-modal{
+        width: 90%;
+    }
+}
+/*:::Fin Ventana Modal:::*/
